@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="660px" height="90px" viewBox="0 0 660 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>Group</title>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetInner1" result="shadowBlurInner1"></feGaussianBlur>
+            <feComposite in="shadowBlurInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowInnerInner1" type="matrix" result="shadowMatrixInner1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+                <feMergeNode in="shadowMatrixInner1"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Group" sketch:type="MSLayerGroup">
+            <rect id="Rectangle-2" stroke="#E5E5E5" fill="#E5E5E5" sketch:type="MSShapeGroup" x="0" y="0" width="660" height="20" rx="10"></rect>
+            <rect id="Rectangle-1" stroke="#D4D4D4" fill="#D4D4D4" filter="url(#filter-1)" sketch:type="MSShapeGroup" x="4" y="4" width="652" height="12" rx="6"></rect>
+            <path d="M0,62.0013189 C0,55.3731735 5.3746078,50 12.0080469,50 L37.9919531,50 C44.6238143,50 50,55.3738099 50,62.0013189 L50,77.9986811 C50,84.6268265 44.6253922,90 37.9919531,90 L12.0080469,90 C5.3761857,90 0,84.6261901 0,77.9986811 L0,62.0013189 Z M25,41 L30,50 L20,50 L25,41 Z" id="Rectangle-3" stroke="#E2E2E2" fill="#E2E2E2" sketch:type="MSShapeGroup"></path>
+            <path d="M153,62.0013189 C153,55.3731735 158.374608,50 165.008047,50 L190.991953,50 C197.623814,50 203,55.3738099 203,62.0013189 L203,77.9986811 C203,84.6268265 197.625392,90 190.991953,90 L165.008047,90 C158.376186,90 153,84.6261901 153,77.9986811 L153,62.0013189 Z M178,41 L183,50 L173,50 L178,41 Z" id="Rectangle-3-Copy" stroke="#E2E2E2" fill="#E2E2E2" sketch:type="MSShapeGroup"></path>
+            <path d="M305,62.0013189 C305,55.3731735 310.374608,50 317.008047,50 L342.991953,50 C349.623814,50 355,55.3738099 355,62.0013189 L355,77.9986811 C355,84.6268265 349.625392,90 342.991953,90 L317.008047,90 C310.376186,90 305,84.6261901 305,77.9986811 L305,62.0013189 Z M330,41 L335,50 L325,50 L330,41 Z" id="Rectangle-3-Copy-2" stroke="#E2E2E2" fill="#E2E2E2" sketch:type="MSShapeGroup"></path>
+            <path d="M458,62.0013189 C458,55.3731735 463.374608,50 470.008047,50 L495.991953,50 C502.623814,50 508,55.3738099 508,62.0013189 L508,77.9986811 C508,84.6268265 502.625392,90 495.991953,90 L470.008047,90 C463.376186,90 458,84.6261901 458,77.9986811 L458,62.0013189 Z M483,41 L488,50 L478,50 L483,41 Z" id="Rectangle-3-Copy-3" stroke="#E2E2E2" fill="#E2E2E2" sketch:type="MSShapeGroup"></path>
+            <path d="M610,62.0013189 C610,55.3731735 615.374608,50 622.008047,50 L647.991953,50 C654.623814,50 660,55.3738099 660,62.0013189 L660,77.9986811 C660,84.6268265 654.625392,90 647.991953,90 L622.008047,90 C615.376186,90 610,84.6261901 610,77.9986811 L610,62.0013189 Z M635,41 L640,50 L630,50 L635,41 Z" id="Rectangle-3-Copy-4" stroke="#E2E2E2" fill="#E2E2E2" sketch:type="MSShapeGroup"></path>
+            <text id="5" sketch:type="MSTextLayer" font-family="Helvetica" font-size="26" font-weight="normal" fill="#666666">
+                <tspan x="171" y="79">5</tspan>
+            </text>
+            <text id="1" sketch:type="MSTextLayer" font-family="Helvetica" font-size="26" font-weight="normal" fill="#666666">
+                <tspan x="19" y="79">1</tspan>
+            </text>
+            <text id="10" sketch:type="MSTextLayer" font-family="Helvetica" font-size="26" font-weight="normal" fill="#666666">
+                <tspan x="315" y="79">10</tspan>
+            </text>
+            <text id="15" sketch:type="MSTextLayer" font-family="Helvetica" font-size="26" font-weight="normal" fill="#666666">
+                <tspan x="468" y="79">15</tspan>
+            </text>
+            <text id="20" sketch:type="MSTextLayer" font-family="Helvetica" font-size="26" font-weight="normal" fill="#666666">
+                <tspan x="621" y="79">20</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

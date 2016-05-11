@@ -1,0 +1,211 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="喜事管家"/>
+    <title>喜事管家</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/jquery-mobile-bower/css/jquery.mobile-1.4.5.css" />
+    <link rel="stylesheet" href="/bower_components/OwlCarousel/owl-carousel/owl.carousel.css" />
+    <link rel="stylesheet" href="/bower_components/OwlCarousel/owl-carousel/owl.theme.css" />
+    <link rel="stylesheet" href="/bower_components/jquery-mobile-iscrollview/lib/jquery.mobile.iscrollview.css" />
+    <link rel="stylesheet" href="/bower_components/jquery-mobile-iscrollview/lib/jquery.mobile.iscrollview-pull.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+    <script src="http://api.map.baidu.com/api?v=2.0&ak=559a493498c8f694c269c41358003fe5"></script>
+  </head>
+  <body> 
+  <div data-role="page" class="index-page"> 
+    <div class="trans" data-role="header" data-position="fixed" data-transition="fade" data-theme="o">
+      <div class="bar-nav">
+        <div class="bar-left location">
+          <i class="fa fa-fw fa-location-arrow"></i><br />
+          北京
+        </div>
+        <div class="bar-search-box">
+          <input id="searchbox" type="search" placeholder="搜搜“婚礼策划” 有惊喜呦\(^o^)/" />
+        </div>
+        <div class="bar-right message">
+          <img src="images/icons/customer_service.svg"><br />
+          客服
+        </div>
+      </div>
+    </div>
+    <div role="main" data-iscroll class="ui-content no-padding">
+      <div class="iscroll-pulldown">
+        <span class="iscroll-pull-icon"></span>
+          <span data-iscroll-loading-text="加载中..."
+                data-iscroll-pulled-text="释放刷新"
+                class="iscroll-pull-label">下拉刷新</span>
+      </div>
+      <div class="slider">
+        <div id="slider" class="owl-carousel">
+          <div class="slider-image">
+            <img src="images/banner3.png" />
+          </div>
+          <div class="slider-image">
+            <img src="images/banner2.png" />
+          </div>
+          <div class="slider-image">
+            <img src="images/weidinghui.png" />
+          </div>
+        </div>
+      </div>
+      <nav class="find-navs">
+        <ul>
+          <li class="find-photographer">
+            <a href="pages/profession_persons.html" data-transition="slide">
+              <div class="nav-image">
+                <img src="images/icons/pander_photographer.png" />
+              </div>
+              <div class="nav-text">
+                <h3 class="nav-title">找摄影</h3>
+                <p class="nav-desc">
+                  适用于: 写真 婚礼 生日 寿宴 聚会 商务活动
+                </p>
+              </div>
+              <div class="price">
+                300起
+              </div>
+            </a>
+          </li>
+          <li class="find-cameraman">
+            <a href="pages/profession_persons.html" data-transition="slide">
+              <div class="nav-image">
+                <img src="images/icons/pander_cameraman.png" />
+              </div>
+              <div class="nav-text">
+                <h3 class="nav-title">找摄像</h3>
+                <p class="nav-desc">
+                  适用于: 婚礼 生日 寿宴 聚会 年会 商务
+                </p>
+              </div>
+              <div class="price">
+                300起
+              </div>
+            </a>
+          </li>
+          <li class="find-dresser">
+            <a href="pages/profession_persons.html" data-transition="slide">
+              <div class="nav-image">
+                <img src="images/icons/pander_dresser.png" />
+              </div>
+              <div class="nav-text">
+                <h3 class="nav-title">找化妆</h3>
+                <p class="nav-desc">
+                  适用于: 婚礼 寿宴 聚会 年会 演出 团体妆
+                </p>
+              </div>
+              <div class="price">
+                150起
+              </div>
+            </a>
+          </li>
+          <li class="find-emcee">
+            <a href="pages/profession_persons.html" data-transition="slide">
+              <div class="nav-image">
+                <img src="images/icons/pander_emcee.png" />
+              </div>
+              <div class="nav-text">
+                <h3 class="nav-title">找主持</h3>
+                <p class="nav-desc">
+                  适用于: 婚礼 寿宴 满月酒 商务会议 产品发布
+                </p>
+              </div>
+              <div class="price">
+                400起
+              </div>
+            </a>
+          </li>
+          <li class="find-company">
+            <a href="pages/profession_persons.html" data-transition="slide">
+              <div class="nav-image">
+                <img src="images/icons/pander_company.png" />
+              </div>
+              <div class="nav-text">
+                <h3 class="nav-title">找公司</h3>
+                <p class="nav-desc">
+                  适用于: 婚礼 满月酒 寿宴 礼仪庆典
+                </p>
+              </div>
+              <div class="price">
+                800起
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="iscroll-pullup">
+        <span class="iscroll-pull-icon"></span>
+          <span data-iscroll-loading-text="加载中..."
+                data-iscroll-pulled-text="释放刷新"
+                class="iscroll-pull-label">上拉刷新</span>
+      </div>
+    </div>
+    <div data-role="footer">
+      <ul class="footer-navs">
+        <li class="active">
+          <a href=".">
+            <img class="nav-icon" src="images/icons/nav_home2.png" />
+            <div class="nav-title">首页</div>
+          </a>
+        </li>
+        <li>
+          <a href="pages/share.html" data-prefetch="true">
+            <img class="nav-icon" src="images/icons/nav_share.png" />
+            <div class="nav-title">晒单</div>
+          </a>
+        </li>
+        <li>
+          <a href="pages/order.html">
+            <img class="nav-icon" src="images/icons/nav_order.png" />
+            <div class="nav-title">订单</div>
+          </a>
+        </li>
+        <li>
+          <a href="pages/my.html" data-prefetch="true">
+            <img class="nav-icon" src="images/icons/nav_my.png" />
+            <div class="nav-title">我的</div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/jquery-mobile-bower/js/jquery.mobile-1.4.5.js"></script>
+    <script src="/bower_components/OwlCarousel/owl-carousel/owl.carousel.js"></script>
+    <script src="/bower_components/iscroll/src/iscroll.js"></script>
+    <script src="/bower_components/jquery-mobile-iscrollview/lib/jquery.mobile.iscrollview.js"></script>
+    <script src="/bower_components/eventEmitter/EventEmitter.js"></script>
+    <script src="/bower_components/eventie/eventie.js"></script>
+    <script src="/bower_components/imagesloaded/imagesloaded.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

@@ -1,0 +1,359 @@
+$personal-bg-height: 125px;
+$personal-info-height: 85px;
+.recommend-personal-page {
+  text-shadow: none;
+  .panel {
+    border-radius: 0;
+    margin-bottom: 10px;
+  }
+
+  .panel-heading {
+    font-size: 1rem;
+    & .btn {
+      font-size: 1rem;
+    }
+    .panel-name {
+      display: inline-block;
+      padding: 6px 0;
+    }
+    border-bottom: 1px solid #bbbbbb;
+  }
+  .personal_bg {
+    height: $personal-bg-height;
+    background: url("../images/personal_bg.png") no-repeat;
+    background-size: 100% 100%;
+    color: #ffffff;
+    padding: 0 15px;
+  }
+  .personal-info {
+    height: $personal-info-height;
+    margin-left: 0;
+    img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  .personal-text {
+    margin-left: 75px;
+  }
+  .personal-name {
+    font-size: 1.2rem;
+    position: relative;
+  }
+  .personal-type {
+    font-size: .8rem;
+  }
+  .motto {
+    font-size: .8rem;
+  }
+  .label-circle {
+    border-radius: 100%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 8px;
+    position: relative;
+    top: -4px;
+  }
+  .bg-pink {
+    background-color: #ff6997;
+  }
+  .bg-primary {
+    background-color: darken(#428bca, 6.5%);
+  }
+  .bg-red {
+    background-color: #e26b3d;
+  }
+  .bg-yellow {
+    background-color: #eca41d;
+  }
+  .calendar > .day {
+    float: left;
+    display: inline-block;
+    width: (100%/7);
+    text-align: center;
+    & > .lunar-day {
+      font-size: 80%;
+    }
+    .lunar-day,.week-day {
+      color: #999999;
+    }
+  }
+  .gray {
+    color: #999999;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .small {
+    font-size: small;
+  }
+  .smaller {
+    font-size: smaller;
+  }
+
+  .btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+
+
+.recommend-team-page, .personal-package-page {
+  text-shadow: none;
+  header {
+    height: 340px;
+    color: #ffffff;
+    position: relative;
+  }
+
+  .bar-nav {
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    right: 15px;
+    z-index: 1;
+  }
+
+  .indicator {
+    background-color: #a5a6a2;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: .8rem;
+    text-align: center;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+  }
+
+  .panel {
+    border-radius: 0;
+    margin-bottom: 10px;
+  }
+
+  .panel-heading {
+    border-bottom: 1px solid #bbbbbb;
+    &.no-border {
+      border: none;
+    }
+  }
+
+  .team-desc {
+    text-indent: 2em;
+  }
+
+  .property {
+    & > .prop-name {
+      color: #999999;
+      margin-right: 10px;
+    }
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .orange {
+    color: #ff7676;
+  }
+
+  .gray {
+    color: #999999;
+  }
+
+  .member {
+    padding: 0 10px;
+    & > img {
+      margin-bottom: 8px;
+    }
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .btn-orange {
+    background-color: #ff7676;
+    position: absolute;
+    right: 15px;
+    height: 2.5em;
+    line-height: 2.5em;
+    top: 50%;
+    margin-top: -1.25em;
+    padding-top: 0;
+    padding-bottom: 0;
+    &,&:hover {
+      color: #ffffff;
+    }
+  }
+
+  .help-icon {
+    border: 1px solid #ff7676;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    border-radius: 100%;
+    line-height: 2em;
+    font-size: .8em;
+    box-sizing: border-box;
+  }
+
+  .panel-row {
+    padding: 0 15px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .padding-v-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .p-b-10 {
+    padding-bottom: 10px;
+  }
+}
+
+.order-fill-page {
+  .panel {
+    margin: 0 -16px 15px;
+  }
+  .order-image {
+    float: left;
+    & > img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  .order-info {
+    margin-left: 90px;
+    line-height: (80px/2);
+    position: relative;
+    &:before {
+      content: "\f105";
+      font-family: "FontAwesome";
+      color: lighten(#333, 10%);
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      line-height: 80px;
+      transform: scale(2);
+    }
+  }
+  .panel-header {
+    padding: 10px;
+    border-bottom: 1px solid #e2e2e2;
+  }
+  .props {
+    display: table;
+    width: 100%;
+    .prop {
+      display: table-row;
+      line-height: 3.5rem;
+      .prop-name, .prop-val {
+        display: table-cell;
+        border-bottom: 1px solid #ddd;
+        text-shadow: none;
+      }
+      .prop-name {
+        width: 5.5em;
+        padding-left: 10px;
+        color: #888;
+      }
+      .prop-val {
+        padding-right: 10px;
+        line-height: 1.3em;
+        padding-bottom: 10px;
+      }
+    }
+  }
+  .iscroll-content {
+    padding: 0 16px 10px!important;
+  }
+  .period {
+    display: inline-block;
+    border: 1px solid #999;
+    vertical-align: middle;
+    line-height: .9em;
+    text-align: center;
+    padding: 5px .7em;
+    border-radius: 5px;
+    margin-right: 10px;
+    text-shadow: none;
+    cursor: pointer;
+    .meridian {
+      font-size: .8rem;
+    }
+    .period-time {
+      font-size: .5rem;
+    }
+    &.selected {
+      border-color: #ff7676;
+      background-color: #ff7676;
+      color: #fff;
+    }
+    &.disabled {
+      border: 1px dashed #999;
+      color: #999;
+    }
+  }
+  .panel-append {
+    overflow: hidden;
+    margin-top: -8px;
+    margin-bottom: 15px;
+    font-size: .8rem;
+    cursor: pointer;
+  }
+  .pay-bottom {
+    margin: 0 -16px;
+    background-color: #474747;
+    color: #fff;
+    line-height: 3rem;
+    height: 3rem;
+    text-shadow: none;
+    font-size: 1.1rem;
+    font-weight: 400;
+    a.pay-btn {
+      background-color: #ff7676;
+      display: inline-block;
+      float: right;
+      padding: 0 2em;
+      cursor: pointer;
+      text-align: center;
+      color: #fff;
+      text-decoration: none;
+      &.btn-block {
+        display: block;
+        float: none;
+        padding: 0;
+      }
+    }
+  }
+  .ui-footer {
+    border: none;
+  }
+}

@@ -1,0 +1,147 @@
+.coupons-page, .coupon-selection-page {
+	background-color: #e5e5e5;
+	.ui-navbar {
+		.my-nav-item {
+			position: relative;
+			&.nav-active {
+				&:after {
+					content: "";
+					border: 1px solid #ff7676;
+					display: inline-block;
+					position: absolute;
+					bottom: 0;
+					left: 15px;
+					right: 15px;
+					z-index: 2;
+				}
+			}
+			&:focus {
+				outline: none;
+			}
+			.ui-btn {
+				background-color: #fff;
+				border-left-width: 0;
+				padding: 1em;
+				&:focus {
+					box-shadow: none;
+				}
+				&.ui-btn-active {
+					color: #333;
+					text-shadow: none;				
+				}
+			}
+		}
+	}
+
+	.coupon {
+		overflow: hidden;
+		padding: 0 10px;
+		margin: 15px 0;
+		text-shadow: none;
+		color: #fff;
+		position: relative;
+		&.selectable {
+			padding-left: 4.5rem;
+		}
+		.amount {
+			float: left;
+			width: 110px;
+			height: 110px;
+			line-height: 110px;
+			background: url('../images/coupon/coupon_left.png') no-repeat;
+			background-size: 100% 100%;
+			text-align: center;
+			font-size: 2rem;
+			font-weight: bold;
+			letter-spacing: 1px;
+			box-sizing: border-box;
+			position: relative;
+			vertical-align: text-bottom;
+			& > .unit {
+				margin: 0;
+				font-size: .6em;
+				margin-right: -.7em;
+				letter-spacing: 0;
+			}
+		}
+
+		.detail {
+			margin-left: 110px;
+			height: 110px;
+			background: url('../images/coupon/coupon_right.png') no-repeat;
+			background-size: 100% 100%;
+			padding: 25px 0 0 15px;
+			box-sizing: border-box;
+			& > .coupon-title {
+				margin: 0;
+				font-size: 1.1rem;
+				font-weight: 500;
+			}
+
+			& > p {
+				margin: 6px 0;
+				font-size: .9rem;
+			}
+		}
+
+		&.warning {
+			.detail {
+				background-image: url('../images/coupon/coupon_right2.png');
+			}
+		}
+	}
+
+	.coupon-list {
+		display: none;
+		&.current {
+			display: block;
+		}
+	}
+
+	#used, #expired {
+		.coupon {
+			color: inherit;
+			.amount {
+				background-image: url('../images/coupon/coupon_left2.png');
+				color: #aaa;
+			}
+			.detail {
+				color: #666;
+			}
+		}
+	}
+
+	#used {
+		.coupon .detail {
+			background-image: url('../images/coupon/coupon_right3.png');
+		}
+	}
+
+	#expired {
+		.coupon .detail {
+			background-image: url('../images/coupon/coupon_right4.png');
+		}
+	}
+}
+
+.coupon-instruction-page {
+	text-shadow: none;
+	.faq {
+		padding: 0 15px;
+		.question {
+			margin: 0 0 5px;
+			font-size: 1.3rem;
+		}
+
+		.answer {
+			color: #666;
+			& > ul {
+				margin: 0;
+				padding-left: 20px;
+			}
+		}
+		.faq-item {
+			margin-bottom: 40px;
+		}
+	}
+}

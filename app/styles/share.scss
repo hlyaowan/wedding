@@ -1,0 +1,126 @@
+.share-page {
+  .share {
+    margin: -5px -5px 15px;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0,0,0,.8);
+    position: relative;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .share-image {
+    box-shadow: 0 0 3px rgba(0,0,0,.8);
+  }
+  .share-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: .8rem;
+    z-index: 1;
+    padding: 10px;
+    text-align: right;
+    box-sizing: border-box;
+  }
+  .share-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px 5px;
+    line-height: 50px;
+    background-image: -webkit-linear-gradient(top, transparent, #000);
+    .avatar {
+      width: 50px;
+      height: 50px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+    .quantity {
+      font-size: .8rem;
+    }
+  }
+}
+
+.share-detail-page {
+  .summary {
+    border-bottom: 1px solid #e2e2e2;
+    padding: 10px;
+    .avatar {
+      float: left;
+      border-radius: 4px;
+      & > img {
+        width: 70px;
+        height: 70px;
+        border-radius: 2px;
+      }
+    }
+    .summary-text {
+      margin-left: 80px;
+      line-height: (70px/3);
+      vertical-align: middle;
+    }
+  }
+  .post-from,.post-time {
+    font-size: .8rem;
+    color: #969696;
+  }
+  .post-content {
+    padding: 20px 10px;
+    border-bottom: 1px solid #e2e2e2;
+  }
+  .post-desc {
+    font-size: .8rem;
+    margin-bottom: 20px;
+  }
+  .post-image {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    & > img {
+      width: 100%;
+    }
+  }
+  .comments {
+    padding-left: 10px;
+    & > h1 {
+      font-size: 1rem;
+      margin: 0;
+      line-height: 2.5rem;
+      border-bottom: 1px solid #e2e2e2;
+    }
+  }
+  .comment {
+    padding: 10px 0;
+    border-bottom: 1px solid #e2e2e2;
+    .avatar {
+      float: left;
+      width: 50px;
+      & > img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+    .comment-content {
+      margin-left: 60px;
+      padding-right: 30px;
+      position: relative;
+      .comment-text {
+        font-size: .8rem;
+        line-height: 1.3rem;
+      }
+      .comment-info {
+        line-height: (50px/2);
+      }
+      .reply-btn {
+        position: absolute;
+        bottom: 0;
+        right: 15px;
+        display: block;
+        color: #657766;
+      }
+    }
+  }
+}

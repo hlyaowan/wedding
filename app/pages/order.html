@@ -1,0 +1,163 @@
+<div data-role="page" class="order-page">
+  <div data-role="header" data-theme="o">
+    <div class="bar-nav">
+      <a href="../" class="pull-left not-default" data-transition="slide" data-direction="reverse">
+        <i class="fa fa-angle-left"></i> 返回
+      </a>
+      <div class="bar-title"><span class="title-name">收到的定单</span> <i class="fa fa-caret-down"></i></div>
+      <div class="dropdown-menu">
+        <div class="select-item selected">
+          <a href="javascript:void(0)">收到的订单</a>
+        </div>
+        <div class="select-item">
+          <a href="javascript:void(0)">发出的订单</a>
+        </div>
+      </div>
+    </div>
+    <div data-role="navbar">
+      <ul>
+        <li class="my-nav-item" data-target="profession">
+          <a href="javascript:void(0)">
+            <span class="tab-item">全部</span>
+          </a>
+        </li>
+        <li class="my-nav-item" data-target="price">
+          <a href="javascript:void(0)">
+            <span class="tab-item">待付款</span>
+          </a>
+        </li>
+        <li class="my-nav-item" data-target="order">
+          <a href="javascript:void(0)">
+            <span class="tab-item">服务中</span>
+          </a>
+        </li>
+        <li class="my-nav-item" data-target="order">
+          <a href="javascript:void(0)">
+            <span class="tab-item">已完成</span>
+          </a>
+        </li>
+        <li class="my-nav-item" data-target="order">
+          <a href="javascript:void(0)">
+            <span class="tab-item">已取消</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div role="main" data-iscroll class="ui-content no-padding">
+    <div class="iscroll-pulldown">
+      <span class="iscroll-pull-icon"></span>
+            <span data-iscroll-loading-text="加载中..."
+                  data-iscroll-pulled-text="释放刷新"
+                  class="iscroll-pull-label">下拉刷新</span>
+    </div>
+    <div id="orderList" class="order-list">
+      <div class="order">
+        <div class="order-header">
+          <span>测试团队 - 小明 <i class="fa fa-angle-right"></i></span>
+          <span class="pull-right orange">定单状态</span>
+        </div>
+        <div class="order-body">
+          <div class="order-image">
+            <img src="../images/order/1.jpg" />
+          </div>
+          <div class="order-text">
+            <div class="order-title">测试套餐</div>
+            <div class="order-price orange">￥1000</div>
+            <div class="order-date">预约日期: 2015-10-10 上午</div>
+          </div>
+        </div>
+        <div class="order-bottom">
+          <span>已付定金: <b class="orange">￥200</b></span>
+            <span class="pull-right">
+              <a href="javascript:void(0)" class="btn btn-black">等待接单</a>
+              <a href="payment_earnest.html" class="btn btn-orange">
+                去付定金
+              </a>
+            </span>
+        </div>
+      </div>
+      <div class="order">
+        <div class="order-header">
+          <span>测试团队 - 小明 <i class="fa fa-angle-right"></i></span>
+          <span class="pull-right orange">定单状态</span>
+        </div>
+        <div class="order-body">
+          <div class="order-image">
+            <img src="../images/order/2.jpg" />
+          </div>
+          <div class="order-text">
+            <div class="order-title">测试套餐</div>
+            <div class="order-price orange">￥1000</div>
+            <div class="order-date">预约日期: 2015-10-10 上午</div>
+          </div>
+        </div>
+        <div class="order-bottom">
+          <span>已付定金: <b class="orange">￥200</b></span>
+            <span class="pull-right">
+              <a href="javascript:void(0)" class="btn btn-black">等待接单</a>
+              <a href="payment_earnest.html" class="btn btn-orange">
+                去付定金
+              </a>
+            </span>
+        </div>
+      </div>
+      <div class="order">
+        <div class="order-header">
+          <span>测试团队 - 小明 <i class="fa fa-angle-right"></i></span>
+          <span class="pull-right orange">定单状态</span>
+        </div>
+        <div class="order-body">
+          <div class="order-image">
+            <img src="../images/order/3.jpg" />
+          </div>
+          <div class="order-text">
+            <div class="order-title">测试套餐</div>
+            <div class="order-price orange">￥1000</div>
+            <div class="order-date">预约日期: 2015-10-10 上午</div>
+          </div>
+        </div>
+        <div class="order-bottom">
+          <span>已付定金: <b class="orange">￥200</b></span>
+            <span class="pull-right">
+              <a href="javascript:void(0)" class="btn btn-black">等待接单</a>
+              <a href="payment_earnest.html" class="btn btn-orange">
+                去付定金
+              </a>
+            </span>
+        </div>
+      </div>
+      <div class="order">
+        <div class="order-header">
+          <span>测试团队 - 小明 <i class="fa fa-angle-right"></i></span>
+          <span class="pull-right orange">定单状态</span>
+        </div>
+        <div class="order-body">
+          <div class="order-image">
+            <img src="../images/order/4.jpg" />
+          </div>
+          <div class="order-text">
+            <div class="order-title">测试套餐</div>
+            <div class="order-price orange">￥1000</div>
+            <div class="order-date">预约日期: 2015-10-10 上午</div>
+          </div>
+        </div>
+        <div class="order-bottom">
+          <span>已付定金: <b class="orange">￥200</b></span>
+            <span class="pull-right">
+              <a href="javascript:void(0)" class="btn btn-black">等待接单</a>
+              <a href="payment_final.html" class="btn btn-orange">
+                去付尾款
+              </a>
+            </span>
+        </div>
+      </div>
+    </div>
+    <div class="iscroll-pullup">
+      <span class="iscroll-pull-icon"></span>
+            <span data-iscroll-loading-text="加载中..."
+                  data-iscroll-pulled-text="释放刷新"
+                  class="iscroll-pull-label">上拉刷新</span>
+    </div>
+  </div>
+</div>

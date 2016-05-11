@@ -1,0 +1,37 @@
+.image-viewer-page {
+  background: #000;
+  text-shadow: none;
+  color: #fff;
+  .slider {
+    position: absolute;
+    top: 15%;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+    #slider, .owl-wrapper-outer, .owl-wrapper-outer * {
+      height: 100%;
+    }
+    .slider-image {
+      & > img {
+        width: 100%;
+      }
+    }
+
+    & > .image-text {
+      font-size: .9rem;
+      padding: 0 1em;
+    }
+  }
+  .slider-funcs {
+    position: absolute;
+    bottom: 0;
+    font-size: 1.2rem;
+    padding: 0 1em;
+    & > .fa {
+      margin-right: 10px;
+    }
+  }
+  .ui-content {
+    background: #232323;
+  }
+}

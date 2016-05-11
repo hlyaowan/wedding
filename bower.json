@@ -1,0 +1,60 @@
+{
+  "name": "hybrid",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "modernizr": "~2.8.1",
+    "jquery-mobile-bower": "~1.4.5",
+    "OwlCarousel": "~1.3.2",
+    "font-awesome": "~4.4.0",
+    "jquery-mobile-iscrollview": "watusi/jquery-mobile-iscrollview#~1.3.6",
+    "iscroll": "~4.2.5",
+    "imagesloaded": "~3.1.8"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap1.scss",
+        "assets/fonts/bootstrap1/*",
+        "assets/javascripts/bootstrap1.js"
+      ]
+    },
+    "OwlCarousel": {
+      "main": [
+        "owl-carousel/owl.carousel.css",
+        "owl-carousel/owl.theme.css",
+        "owl-carousel/owl.carousel.js"
+      ],
+      "dependencies": {
+        "jquery": "~1.10.0"
+      }
+    },
+    "font-awesome": {
+      "main": [
+        "scss/font-awesome.scss",
+        "fonts/*"
+      ]
+    },
+    "jquery-mobile-iscrollview": {
+      "main": [
+        "lib/jquery.mobile.iscrollview.js",
+        "lib/jquery.mobile.iscrollview.css",
+        "lib/jquery.mobile.iscrollview-pull.css"
+      ],
+      "dependencies": {
+        "jquery": "~1.10.0",
+        "jquery-mobile-bower": "~1.4.5",
+        "iscroll": "~4.2.5"
+      }
+    },
+    "iscroll": {
+      "main": [
+        "src/iscroll.js"
+      ]
+    }
+  },
+  "devDependencies": {
+    "chai": "~3.4.0",
+    "mocha": "~2.3.3"
+  }
+}

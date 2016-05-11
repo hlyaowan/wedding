@@ -1,0 +1,63 @@
+.personal-packages-page {
+	.package-image {
+		float: left;
+		& > img {
+			width: 120px;
+			height: 85px;
+			border-radius: 5px;
+		}
+	}
+
+	.package-text {
+		margin-left: 130px;
+		line-height: (85px / 3);
+	}
+
+	.package-title {
+		font-size: 1.2rem;
+		margin-bottom: 5px;
+		& > .price {
+			font-size: 1.2rem;
+		}
+	}
+
+	.package-earnest {
+		position: relative;
+		.btn {
+			padding: .3em 1.5em;
+			font-size: 1.1rem;
+			border-radius: 5px;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+	}
+	.panel {
+		margin-bottom: 0;
+	}
+}
+
+.order-fill-page {
+	input {
+		border: none;
+		outline: none;
+	}
+	textarea {
+		width: 90%;
+		vertical-align: middle;
+		border: none;
+		resize: none;
+		outline: none;
+	}
+	@media screen and (max-width: 400px) {
+	  .period {
+	  	margin-right: 0;
+	  }
+	}
+
+	@media screen and (max-width: 350px) {
+	  .period {
+	  	margin: 5px 0;
+	  }
+	}
+}

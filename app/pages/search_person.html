@@ -1,0 +1,97 @@
+<div data-role="page" class="search-person-page">
+  <div data-role="header" data-theme="o">
+    <div class="bar-nav">
+      <a href="../" data-transition="slide" data-direction="reverse" class="pull-left not-default">
+        <i class="fa fa-angle-left fa-lg"></i> 返回
+      </a>
+      <div class="bar-title">搜索</div>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content no-padding">
+    <form id="searchForm">
+      <div class="panel">
+        <label class="prop featured b-b">
+          <div class="prop-name">档期</div>
+          <div class="prop-value">
+            <input name="date" type="date" value="2015-12-08" />
+          </div>
+        </label>
+        <a href="#professions-selector" data-rel="popup"
+           data-transition="slideup" data-position-to="window" class="not-default prop featured b-b">
+          <div class="prop-name">职业</div>
+          <div class="prop-value" id="selectedProfession">
+            主持人
+          </div>
+        </a>
+        <label class="prop b-b">
+          <div class="prop-name">关键词</div>
+          <div class="prop-value">
+            <input name="keyword" type="text" />
+          </div>
+        </label>
+        <a href="#price-selector" data-rel="popup"
+           data-transition="slideup" data-position-to="window" class="not-default prop featured b-b">
+          <div class="prop-name">价位</div>
+          <div class="prop-value" id="selectedPrice">
+            1000 - 5000
+          </div>
+        </a>
+      </div>
+      <button type="submit" class="submit-btn btn btn-block btn-orange">
+        搜索
+      </button>
+    </form>
+  </div>
+  <div data-role="popup" data-overlay-theme="b" id="professions-selector">
+    <dl class="selectbox">
+      <dt class="selectbox-title">
+        请选择
+      </dt>
+      <dd>
+        <ul class="selectbox-list">
+          <li class="selectbox-option">
+            <a href="#">主持人</a>
+          </li>
+          <li class="selectbox-option">
+            <a href="#">摄像师</a>
+          </li>
+          <li class="selectbox-option">
+            <a href="#">摄影师</a>
+          </li>
+          <li class="selectbox-option">
+            <a href="#">化妆师</a>
+          </li>
+          <li class="selectbox-option">
+            <a href="#">花艺师</a>
+          </li>
+        </ul>
+      </dd>
+    </dl>
+  </div>
+  <div data-role="popup" data-overlay-theme="b" id="price-selector">
+    <dl class="selectbox">
+      <dt class="selectbox-title">
+        请选择
+      </dt>
+      <dd>
+        <ul class="selectbox-list">
+          <li class="selectbox-option">
+            <a href="#">1000元</a>
+          </li>
+          <li class="selectbox-option">
+            <a href="#">1000元 - 2000元</a>
+          </li>
+          <li class="selectbox-option">
+            <a href="#">2000元 - 4000元</a>
+          </li>
+          <li class="selectbox-option">
+            <a href="#">4000元 - 8000元</a>
+          </li>
+          <li class="selectbox-option">
+            <a href="#">1万以上</a>
+          </li>
+        </ul>
+      </dd>
+    </dl>
+  </div>
+</div>

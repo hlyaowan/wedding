@@ -1,0 +1,326 @@
+<div data-role="page" class="grab-page" data-dom-cache="true">
+  <div data-role="header" data-theme="o">
+    <div class="bar-nav">
+          <span class="pull-right">
+            发布
+          </span>
+      <div class="bar-title">抢单</div>
+    </div>
+    <div data-role="navbar">
+      <ul>
+        <li class="my-nav-item" data-target="profession">
+          <a href="javascript:void(0)">
+            <span class="selectedOpt">全部职业</span> <i class="fa fa-lg"></i>
+          </a>
+        </li>
+        <li class="my-nav-item" data-target="price">
+          <a href="javascript:void(0)">
+            <span class="selectedOpt">全部价格</span> <i class="fa fa-lg"></i>
+          </a>
+        </li>
+        <li class="my-nav-item" data-target="order">
+          <a href="javascript:void(0)">
+            <span class="selectedOpt">综合排序</span> <i class="fa fa-lg"></i>
+          </a>
+        </li>
+      </ul>
+      <div id="professionSelections" class="dropdown-menu" data-type="profession">
+        <div class="select-items">
+          <div class="select-item selected">
+            <a href="javascript:void(0)">全部职业</a>
+          </div>
+          <div class="select-item">
+            <a href="javascript:void(0)">主持人</a>
+          </div>
+          <div class="select-item">
+            <a href="javascript:void(0)">摄像师</a>
+          </div>
+          <div class="select-item">
+            <a href="javascript:void(0)">摄影师</a>
+          </div>
+          <div class="select-item">
+            <a href="javascript:void(0)">化妆师</a>
+          </div>
+          <div class="select-item">
+            <a href="javascript:void(0)">花艺师</a>
+          </div>
+          <div class="select-item">
+            <a href="javascript:void(0)">督导师</a>
+          </div>
+          <div class="select-item">
+            <a href="javascript:void(0)">策划师</a>
+          </div>
+          <div class="select-item">
+            <a href="javascript:void(0)">沙画师</a>
+          </div>
+          <div class="select-item">
+            <a href="javascript:void(0)">婚庆公司</a>
+          </div>
+          <div class="select-item">
+            <a href="javascript:void(0)">歌舞表演</a>
+          </div>
+          <div class="select-item">
+            <a href="javascript:void(0)">宴会酒店</a>
+          </div>
+          <div class="select-item">
+            <a href="javascript:void(0)">婚车租凭</a>
+          </div>
+          <div class="select-item">
+            <a href="javascript:void(0)">场景道具</a>
+          </div>
+          <div class="select-item">
+            <a href="javascript:void(0)">庆典设备</a>
+          </div>
+          <div class="select-item">
+            <a href="javascript:void(0)">影视制作</a>
+          </div>
+          <div class="select-item">
+            <a href="javascript:void(0)">礼仪模特</a>
+          </div>
+          <div class="select-item">
+            <a href="javascript:void(0)">糕点师</a>
+          </div>
+          <div class="select-item">
+            <a href="javascript:void(0)">婚纱礼服</a>
+          </div>
+          <div class="select-item">
+            <a href="javascript:void(0)">调酒师</a>
+          </div>
+          <div class="select-item">
+            <a href="javascript:void(0)">灯光音响</a>
+          </div>
+        </div>
+      </div>
+      <div id="priceSelections" class="dropdown-menu" data-type="price">
+        <div class="select-item selected">
+          <a href="javascript:void(0)">全部价格</a>
+        </div>
+        <div class="select-item">
+          <a href="javascript:void(0)">0元-1000元</a>
+        </div>
+        <div class="select-item">
+          <a href="javascript:void(0)">1000元-2000元</a>
+        </div>
+        <div class="select-item">
+          <a href="javascript:void(0)">2000元-4000元</a>
+        </div>
+        <div class="select-item">
+          <a href="javascript:void(0)">4000元-8000元</a>
+        </div>
+        <div class="select-item">
+          <a href="javascript:void(0)">1万以上</a>
+        </div>
+        <div class="select-item">
+          <a href="javascript:void(0)">10万以上</a>
+        </div>
+      </div>
+      <div id="orderSelections" class="dropdown-menu" data-type="order">
+        <div class="select-item selected">
+          <a href="javascript:void(0)">综合排序</a>
+        </div>
+        <div class="select-item">
+          <a href="javascript:void(0)">任务时间最近</a>
+        </div>
+        <div class="select-item">
+          <a href="javascript:void(0)">任务时间最远</a>
+        </div>
+        <div class="select-item">
+          <a href="javascript:void(0)">发布时间最近</a>
+        </div>
+        <div class="select-item">
+          <a href="javascript:void(0)">发布时间最远</a>
+        </div>
+        <div class="select-item">
+          <a href="javascript:void(0)">价格从低到高</a>
+        </div>
+        <div class="select-item">
+          <a href="javascript:void(0)">价格从高到低</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div role="main" data-iscroll class="ui-content no-padding">
+    <div class="iscroll-pulldown">
+      <span class="iscroll-pull-icon"></span>
+            <span data-iscroll-loading-text="加载中..."
+                  data-iscroll-pulled-text="释放刷新"
+                  class="iscroll-pull-label">下拉刷新</span>
+    </div>
+    <div id="postList" class="post-list">
+      <div class="post">
+        <div class="post-image">
+          <img src="images/avatar/5.png" />
+        </div>
+        <div class="post-text">
+          <div class="post-title">
+            <span>招摄像师一名</span>
+            <span class="orange pull-right">￥ 3,000</span>
+          </div>
+          <div class="post-time">
+            时间 2015-05-01
+          </div>
+          <div class="post-place">
+            地点 北京市海淀区中关村大街
+          </div>
+          <div class="post-require">
+            需求 具备良好的职业素养、临场应变能力
+          </div>
+        </div>
+        <div class="contacts">
+          <div class="contact-type phone">
+            <i class="contact-icon fa fa-phone"></i>打电话
+          </div>
+          <div class="contact-type message">
+            <i class="contact-icon fa fa-comment"></i>发消息
+          </div>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post-image">
+          <img src="images/avatar/1.jpg" />
+        </div>
+        <div class="post-text">
+          <div class="post-title">
+            <span>招摄像师一名</span>
+            <span class="orange pull-right">￥ 3,000</span>
+          </div>
+          <div class="post-time">
+            时间 2015-05-01
+          </div>
+          <div class="post-place">
+            地点 北京市海淀区中关村大街
+          </div>
+          <div class="post-require">
+            需求 具备良好的职业素养、临场应变能力
+          </div>
+        </div>
+        <div class="contacts">
+          <div class="contact-type phone">
+            <i class="contact-icon fa fa-phone"></i>打电话
+          </div>
+          <div class="contact-type message">
+            <i class="contact-icon fa fa-comment"></i>发消息
+          </div>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post-image">
+          <img src="images/avatar/3.jpg" />
+        </div>
+        <div class="post-text">
+          <div class="post-title">
+            <span>招摄像师一名</span>
+            <span class="orange pull-right">￥ 3,000</span>
+          </div>
+          <div class="post-time">
+            时间 2015-05-01
+          </div>
+          <div class="post-place">
+            地点 北京市海淀区中关村大街
+          </div>
+          <div class="post-require">
+            需求 具备良好的职业素养、临场应变能力
+          </div>
+        </div>
+        <div class="contacts">
+          <div class="contact-type phone">
+            <i class="contact-icon fa fa-phone"></i>打电话
+          </div>
+          <div class="contact-type message">
+            <i class="contact-icon fa fa-comment"></i>发消息
+          </div>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post-image">
+          <img src="images/avatar/4.jpg" />
+        </div>
+        <div class="post-text">
+          <div class="post-title">
+            <span>招摄像师一名</span>
+            <span class="orange pull-right">￥ 3,000</span>
+          </div>
+          <div class="post-time">
+            时间 2015-05-01
+          </div>
+          <div class="post-place">
+            地点 北京市海淀区中关村大街
+          </div>
+          <div class="post-require">
+            需求 具备良好的职业素养、临场应变能力
+          </div>
+        </div>
+        <div class="contacts">
+          <div class="contact-type phone">
+            <i class="contact-icon fa fa-phone"></i>打电话
+          </div>
+          <div class="contact-type message">
+            <i class="contact-icon fa fa-comment"></i>发消息
+          </div>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post-image">
+          <img src="images/avatar/2.jpg" />
+        </div>
+        <div class="post-text">
+          <div class="post-title">
+            <span>招摄像师一名</span>
+            <span class="orange pull-right">￥ 3,000</span>
+          </div>
+          <div class="post-time">
+            时间 2015-05-01
+          </div>
+          <div class="post-place">
+            地点 北京市海淀区中关村大街
+          </div>
+          <div class="post-require">
+            需求 具备良好的职业素养、临场应变能力
+          </div>
+        </div>
+        <div class="contacts">
+          <div class="contact-type phone">
+            <i class="contact-icon fa fa-phone"></i>打电话
+          </div>
+          <div class="contact-type message">
+            <i class="contact-icon fa fa-comment"></i>发消息
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="iscroll-pullup">
+      <span class="iscroll-pull-icon"></span>
+            <span data-iscroll-loading-text="加载中..."
+                  data-iscroll-pulled-text="释放刷新"
+                  class="iscroll-pull-label">上拉刷新</span>
+    </div>
+  </div>
+  <div data-role="footer">
+    <ul class="footer-navs">
+      <li>
+        <a href="../">
+          <i class="nav-icon fa fa-home"></i>
+          <div>首页</div>
+        </a>
+      </li>
+      <li>
+        <a href="share.html">
+          <i class="nav-icon fa fa-map-signs"></i>
+          <div>晒单</div>
+        </a>
+      </li>
+      <li>
+        <a href="order.html">
+          <i class="nav-icon fa fa-calendar"></i>
+          <div>订单</div>
+        </a>
+      </li>
+      <li>
+        <a href="my.html">
+          <i class="nav-icon fa fa-user"></i>
+          <div>我的</div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,96 @@
+.register1-page, .register2-page, .register3-page {
+  background-color: #f0f0f0;
+  .ui-content {
+    padding: 0 2rem;
+  }
+  .icon-input-field {
+    position: relative;
+    background-color: #fff;
+    margin: 0 -2rem;
+    & > .fa {
+      position: absolute;
+      left: 2rem;
+      font-size: 2rem;
+      margin-top: .5rem;
+    }
+    &.crowd {
+      .ui-input-text {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .ui-input-text {
+    border: none;
+    box-shadow: none;
+    margin: 1rem 1em 1rem 4rem;
+    & > input {
+      padding: .8rem;
+      border-radius: 0;
+    }
+  }
+
+  .ui-checkbox {
+    margin: 0;
+    label.ui-btn {
+      font-size: inherit;
+      font-weight: inherit;
+      border: none;
+      background-color: inherit;
+      padding-top: 0;
+      &:after {
+        background: url("../images/icons/uncheck.png") no-repeat;
+        background-size: 100% 100%;
+      }
+      &.ui-checkbox-on:after {
+        background: url("../images/icons/check.png") no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+    input {
+      visibility: hidden;
+    }
+    .ui-btn-icon-left:after {
+      left: 0;
+      margin-top: 0;
+      top: 0;
+    }
+  }
+  .btn.submit-btn {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 20px 0;
+    border-radius: 4px;
+  }
+  p {
+    font-size: .85rem;
+  }
+  .ui-input-file {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border: 2px dashed #aaa;
+    border-radius: 5px;
+    position: relative;
+    color: #aaa;
+    .ui-input-file-icon {
+      font-size: 40px;
+      margin-top: 25px;
+    }
+    input {
+      display: none;
+    }
+  }
+  .upload-field {
+    padding: 50px 0;
+  }
+}
+
+.register3-page {
+  .icon-input-field > .fa {
+    left: 1rem;
+  }
+  .ui-input-text {
+    margin-left: 3rem;
+  }
+}

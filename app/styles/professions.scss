@@ -1,0 +1,44 @@
+.profession-page {
+  text-shadow: none;
+  //.bar-nav {
+  //  height: 50px;
+  //  line-height: 50px;
+  //  text-align: center;
+  //  color: #ffffff;
+  //  padding: 0 15px;
+  //  margin-bottom: 10px;
+  //  .left-btns {
+  //    position: absolute;
+  //    left: 15px;
+  //    height: 100%;
+  //  }
+  //}
+
+  .profession-list {
+    background-color: #ffffff;
+    display: table;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+    .profession-row {
+      display: table-row;
+    }
+    .profession {
+      display: table-cell;
+      text-align: center;
+      height: 120px;
+      width: 25%;
+      vertical-align: middle;
+      border: 1px solid #d8d8d8;
+      & > img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 5px;
+      }
+      .profession-title {
+        font-size: .8rem;
+      }
+    }
+  }
+
+}
